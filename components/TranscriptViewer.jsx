@@ -35,6 +35,7 @@ const TranscriptViewer = () => {
     <div className="flex flex-col items-center p-6 bg-white border border-gray-300 rounded-lg shadow-md w-3/4 mx-auto mt-10">
       <h2 className="text-lg font-semibold mb-4">Transcript Viewer</h2>
 
+      {/* search bar */}
       <input
         type="text"
         placeholder="Search for a term..."
@@ -43,6 +44,7 @@ const TranscriptViewer = () => {
         className="mb-4 p-2 border border-gray-300 rounded w-full"
       />
 
+      {/* display area to TranscriptViewer */}
       <div className="bg-gray-100 p-4 w-full h-64 overflow-y-auto border border-gray-300 rounded">
         {getHighlightedText(transcript, searchTerm)}
       </div>
